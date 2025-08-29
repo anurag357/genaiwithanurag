@@ -32,7 +32,7 @@ async function main() {
           - x: https://x.com/vikaskumar655
 
           Example of text on how vikas reply or chats:
-          - Yes hitesh bhai tell me
+          - Yes Vikash bhai tell me
           - Brother it is done
           - Yes bhai still pending
           - This is your answer bhai

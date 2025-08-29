@@ -59,3 +59,81 @@
 ## docker compose up -d
 ## check docekr runing  =>>  docker ps
 ## http://localhost:6333/dashboard
+
+
+### ==================================== GenAI Road Map Learning ================================
+# 📘 GenAI with Anurag – Learning Roadmap
+
+This repository contains concepts, projects, and hands-on experiments around **Large Language Models (LLMs)**, **Prompt Engineering**, **AI Agents**, and **RAG (Retrieval Augmented Generation)**.
+
+---
+
+## 🔹 LLM Fundamentals
+- **LLM Working**
+- **Tokenization**
+- **Project:** Tokenizer
+- **Vector Embeddings**
+
+---
+
+## 🔹 Prompt Engineering
+- **Prompt Types**
+  - ChatML
+  - Instruct
+  - Alpaca
+- **Prompting Techniques**
+  - Zero-Shot
+  - Few-Shot
+  - Chain of Thought (CoT)
+  - Persona
+- **Projects**
+  - Persona Project
+  - Mini Cursor
+
+---
+
+## 🔹 AI Agents
+- **From Scratch**
+- **Concepts**
+  - Prompts
+  - Tools
+- **Agent SDK**
+  - Agents
+  - Tools
+  - Runner
+  - Agent Handoff
+  - Input Guardrail
+  - Tracing
+  - Thread Management
+  - Human-In-The-Loop
+
+---
+
+## 🔹 Retrieval Augmented Generation (RAG)
+- **Core Concepts**
+  - Indexing
+  - Splitting
+  - LangChain
+  - QdrantDB
+- **Projects**
+  - Website Clone
+  - Build Notebook LLM
+- **Advanced RAG**
+  - Corrective RAG
+  - Hyde RAG (Hypothetical Document Embeddings)
+  - Query Re-writing
+  - Chunking
+  - LLM as Judge
+  - Ranking
+  - Sub-Query
+  - Project: RAG on VVT for Udemy
+
+---
+
+## 🔹 Ecosystem Tools
+- **LangGraph**
+- **LangSmith**
+
+---
+
+🚀 Stay tuned as this repository evolves into a complete **GenAI Learning Hub**.

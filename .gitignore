@@ -8,3 +8,4 @@ node_modules/
 
 agents_sdk/.env
 prompting/.env
+rag/.env

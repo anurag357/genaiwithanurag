@@ -5,3 +5,6 @@ node_modules/
 
 # dotenv environment variable files
 .env
+
+agents_sdk/.env
+prompting/.env

@@ -60,7 +60,13 @@
 ## check docekr runing  =>>  docker ps
 ## http://localhost:6333/dashboard
 
-
+### ========================================== Memory ===========================================
+# Memory Type
+# 1. Sort Term Memory -> Online user chat, booking order customer chat
+# 2. Long Term Memory
+  ## a. Factual Memory -> Name, DOB
+  ## b. Episodic Memory -> Privious event telling something
+  ## c. Semantic Memory -> General knowledge PM name
 ### ==================================== GenAI Road Map Learning ================================
 # 📘 GenAI with Anurag – Learning Roadmap
 

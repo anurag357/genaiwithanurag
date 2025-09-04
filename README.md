@@ -57,6 +57,7 @@
 ## docker run hello
 ## docker compose up
 ## docker compose up -d
+## docker compose down -v
 ## check docekr runing  =>>  docker ps
 ## http://localhost:6333/dashboard
 
@@ -69,6 +70,53 @@
   ## c. Semantic Memory -> General knowledge PM name
 ### ==================================== GenAI Road Map Learning ================================
 # 📘 GenAI with Anurag – Learning Roadmap
+
+
+### ========================================== Graph Database ===========================================
+# Nodes, edege, entity detection
+# Neo4j => https://neo4j.com/,  http://localhost:7474/browser/,  https://browser.neo4j.io/
+# Kuzu
+# Cyper query => https://neo4j.com/docs/cypher-manual/current/introduction/
+
+  # 1. CREATE (p:Users {name: "Anurag Pathak", Bday:'20th June'}) 
+  # 2. CREATE (p:Org {name: "ChaiCode", website:'chaicode.com'})
+
+  # return all the nodes
+   ## MATCH (n) RETURN n LIMIT 25;
+
+  # Return User and Org nodes
+   ## MATCH (n:Users) RETURN n LIMIT 25;
+   ## MATCH (n:Org) RETURN n LIMIT 25;
+
+  # Find nodes and return all
+   ## MATCH (x:Users {name:'Hitesh'}) RETURN x ;
+
+   ##  MATCH (x:Users {name:'Hitesh'})
+   ##  MATCH (y:Org {name:'ChaiCode'})
+   ##  RETURN x,y
+
+  # Return all the Organization
+   ## MATCH (o:Org) RETURN o
+
+  # Match the founder of Orga return all
+   ## MATCH (n)-[:FOUNDER]->(o:Org) RETURN n
+
+  # Make A Relation 
+   ### MATCH (x:Users {name:'Hitesh'}) MATCH (y:Org {name:'ChaiCode'}) CREATE (x)-[:FOUNDER]-> (y) RETURN x,y
+   
+   ### MATCH (p:Users {name:'Anurag Pathak'}) MATCH (o:Org {name:'ChaiCode'}) CREATE (p)-[r:student]-> (o)  RETURN p r, o
+
+  # Return a relation with org
+   ## MATCH (n)-[r:FOUNDER]->(o:Org) RETURN n, o,r
+
+  # Return all the rele for users with all org. 
+   ## MATCH (u:Users {name:'Hitesh'}) -[r]->(y) RETURN u,r,y
+
+  # Return all the reletion with Organization
+   ## MATCH (a)-[r]->(x:Org {name:'ChaiCode'}) return a,r,x
+ 
+  
+
 
 This repository contains concepts, projects, and hands-on experiments around **Large Language Models (LLMs)**, **Prompt Engineering**, **AI Agents**, and **RAG (Retrieval Augmented Generation)**.
 

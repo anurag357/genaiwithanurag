@@ -8,13 +8,15 @@ const client = new OpenAI({
 const mem = new Memory({
 
     version: "v1.1",
-    // embedder: {
-    //     provider: "openai",
-    //     config: {
-    //         apiKey: process.env.OPENAI_API_KEY || "",
-    //         model: "text-embedding-3-small",
-    //     },
-    // },
+    enableGraph: true,
+    graphStore: {
+        provider: "neo4j",
+        config: {
+            url: "bolt://localhost:7687", // put correct
+            username: "neo4j",
+            password: "FtBZOirP7shYOyXf1Mf6RhYJUE9s6_aW4q1_ZpPbT-M",
+        },
+    },
     vectorStore: {
         provider: "qdrant",
         config: {
@@ -49,4 +51,6 @@ async function chat(query="") {
     ], {userId: '1'}) // database
 }
 
-chat('what is my name')
+// chat('Hey, There my name is Anurag pathak born on 20th june in U.P.')
+// chat('Hey, i love to teach and I student of a chaicode whichhas a website chaicode.com')
+chat('Hey, You know i am a software developer and i love to drink tea and i from india')
